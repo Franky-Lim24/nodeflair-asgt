@@ -2,14 +2,36 @@ import React from 'react';
 import Skills from './Skills';
 import './style.css';
 
-const Rounded = ({ isBig, data }) => {
-	console.log('here', data);
+const Rounded = ({ isBig, data, chosen, selected }) => {
 	return (
 		<>
 			{isBig ? (
-				<div className="rounded" style={{ height: '90vh' }}></div>
+				<div className="rounded" style={{ height: '90vh' }}>
+					<div className="row">
+						<img src={data.image} className="sml-image" />
+						<div className="tags">
+							<div className="specialisation">{data.tag}</div>
+						</div>
+						<div className="company">
+							<p className="company-name">
+								<span>{data.name}</span>
+								<span>&nbsp;{data.star} ★</span>
+							</p>
+							<h2 className="job">{data.job}</h2>
+						</div>
+					</div>
+				</div>
 			) : (
-				<div className="rounded" style={{ cursor: 'pointer' }}>
+				<div
+					className="rounded"
+					style={{
+						cursor: 'pointer',
+						border: selected === data ? '3px solid #1fc76a' : 'none',
+					}}
+					onClick={() => {
+						chosen(data);
+					}}
+				>
 					<div className="row">
 						<img src={data.image} className="sml-image" />
 						<div className="tags">
