@@ -8,7 +8,7 @@ const Rounded = ({ isBig, data, chosen, selected }) => {
 			{isBig ? (
 				<div className="rounded" style={{ height: '90vh' }}>
 					<div className="row">
-						<img src={data.image} className="sml-image" />
+						<img src={data.image} className="sml-image" alt={data.name} />
 						<div className="tags">
 							<div className="specialisation">{data.tag}</div>
 						</div>
@@ -33,7 +33,7 @@ const Rounded = ({ isBig, data, chosen, selected }) => {
 					}}
 				>
 					<div className="row">
-						<img src={data.image} className="sml-image" />
+						<img src={data.image} className="sml-image" alt={data.name} />
 						<div className="tags">
 							<div className="specialisation">{data.tag}</div>
 						</div>
