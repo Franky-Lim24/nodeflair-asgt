@@ -1,0 +1,32 @@
+[
+	{
+		"image": "https://nodeflair.com/companies/2314.png",
+		"name": "Ingram Micro",
+		"star": "3.7",
+		"tag": "Solutions",
+		"job": "Solution Architect, IaaS",
+		"time": "1 day",
+		"location": "Singapore",
+		"skills": ["Microsoft", "Azure", "Linux", "AWS"]
+	},
+	{
+		"image": "https://nodeflair.com/companies/6251.png",
+		"name": "American Express",
+		"star": "4.3",
+		"tag": "Data Sci",
+		"job": "Manager-Data Science",
+		"time": "1 day",
+		"location": "Singapore",
+		"skills": ["API", "R", "Sas", "Hive", "SQL", "Python"]
+	},
+	{
+		"image": "https://nodeflair.com/companies/4120.png",
+		"name": "IFUN SINGAPORE PTE. LTD",
+		"star": "5",
+		"tag": "iOS",
+		"job": "Software Engineer (iOS)",
+		"time": "1 day",
+		"location": "Singapore",
+		"skills": ["Objective C", "iOS", "Swift"]
+	}
+]
